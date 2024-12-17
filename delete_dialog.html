@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\thru.css">
+  <script src="js\jquery-3.5.1.slim.min.js"></script>
+  <script src="js\popper.min.js"></script>
+  <script src="js\fontawesome-5-13-1-all.min.js"></script>
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rollback Confirmation</title>
+</head>
+<body>
+  
+   <div class="thru-header-bottom">
+    <div class="thru-container">
+    </div>
+  </div>
+</div>  <!-- End Main Menu -->  
+
+<!--*******************************************************************************-->
+
+<div class="container">
+   <div class="">
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#rollbackConfirm">
+      Launch Delete Modal
+    </button>
+
+    <!-- Flow History Rollback Confirmation Dialog Modal -->
+    <div class="modal fade" id="rollbackConfirm" tabindex="-1" role="dialog" aria-labelledby="rollbackConfirmLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content thru-generic-modal">
+          <div class="modal-header thru-modal-header-delete">
+            <h5 class="modal-title">Delete - { item being deleted here }</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body my-3 text-center px-5">
+            <p class="m-0" style="font-weight:bold;">Are you sure?</p> 
+            <small>This process cannot be undone.</small>
+          </div>
+          <div class="modal-footer justify-content-start">
+            <button class="btn btn-Cancel btn-thru-lg" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-thru-delete btn-thru-lg">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+  <footer>
+    <div class="copyright pr-1"><small>Copyright © 2021 Thru, Inc. |  v.20200612001</small></div>
+  </footer>
+  
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+  </script>
+  
+</body>
+</html>

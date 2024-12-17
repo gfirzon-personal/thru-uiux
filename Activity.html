@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\thru.css">
+  <link rel="stylesheet" href="css\thru-overview.css">
+  <script src="js\jquery-3.5.1.slim.min.js"></script>
+  <script src="js\popper.min.js"></script>
+  <script src="js\fontawesome-5-13-1-all.min.js"></script>
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity</title>
+</head>
+
+<body>
+
+  <!-- Start Main Menu -->
+  <div class="thru-header">
+    <nav class="navbar navbar-expand navbar-dark static-top">
+      <a class="navbar-brand mr-1" href="#">
+        <img class="img-fluid" src="images\white-thru-logo.svg" alt="Thru logo" width="100px">
+      </a>
+
+      <div id="thruHeaderBar" class="border-left thru-header-bar thru-header__brand-title show">
+        <button id="_hdrmOverview" class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Overview</button>
+        <button id="_hdrmActivity" class="btn btn-ghost mr-2 thru-hdr-bar thru-hdr-active" type="button">
+          Activity</button>
+        <button id="_hdrmOrganizations" class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Organizations</button>
+        <button id="_hdrmFlows" class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Flows</button>
+      </div>
+      <label class="mr-5 custNameHeader">Thru Engineering</label>
+      <!--Right side menu-->
+      <div id="thruTopBar" class="thru-header-topbar thru-header__brand-title ml-auto">
+        <div class="thru-header-topbar__item">
+        </div>
+        <div id="_ctrlmenu" class="thru-header-topbar__item">
+
+          <ul class="navbar-nav ml-auto ml-md-0">
+            <label class="mr-1">Kenny</label>
+            <li id="_ctrlAccount" class="nav-item dropleft">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-user icon-size" data-toggle="tooltip" data-placement="top" title="User"></i>
+                <!--<span> Account</span>-->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <div id="_ctrlAccount_UserProfile" class="dropdown-header">User Profile</div>
+                <div id="_ctrlAccount_ProfileSettings" class="dropdown-item">Profile Settings</div>
+                <div id="_ctrlAccount_Div2" class="dropdown-divider">Div2</div>
+                <div id="_ctrlAccount_SignOut" class="dropdown-item">Sign Out</div>
+              </div>
+            </li>
+
+            <li id="_ctrlHelp" class="nav-item dropleft thru-ctrl-active">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-question-circle icon-size thru-menu-active" data-toggle="tooltip" data-placement="top"
+                  title="Help"></i>
+                <!--<span>Help</span>-->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <div id="_ctrlHelp_GetHelp" class="dropdown-header">Get Help</div>
+                <div id="_ctrlHelp_HelpCenter" class="dropdown-item">Help Center</div>
+              </div>
+            </li>
+            <li id="_ctrlNotifications" class="nav-item dropleft">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+
+                <i class="fas fa-bell icon-size" data-toggle="tooltip" data-placement="top" title="Notifications"></i>
+                <!--<span>Notifications</span>-->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <div id="_ctrlNotifications_ManageNotifications" class="dropdown-header">Manage Notifications</div>
+                <div id="_ctrlNotifications_NotificationsBanner" class="dropdown-item-text no-messages">You don’t have
+                  any notifications yet.</div>
+              </div>
+            </li>
+
+            <li id="_ctrlAdmin" class="nav-item dropleft">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fas fa-cog icon-size" data-toggle="tooltip" data-placement="top" title="Admin"></i>
+                <!--<span>Admin</span>-->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <div id="_ctrlAdmin_Administration" class="dropdown-header">Administration</div>
+                <div id="_ctrlAdmin_AccountSettings" class="dropdown-item">General Settings</div>
+                <div id="_ctrlAdmin_AccountAlerts" class="dropdown-item">Alert Settings</div>
+                <div id="_ctrlAdmin_AccountRetention" class="dropdown-item">Default Retention</div>
+                <div id="_ctrlAdmin_AccountAccess" class="dropdown-item">Access &amp; Security</div>
+                <div id="_ctrlAdmin_Connectors" class="dropdown-item">Connector Settings</div>
+                <div id="_ctrlAdmin_AccountEmail" class="dropdown-item">Email Settings</div>
+                <div id="_ctrlAdmin_ManageInstances" class="dropdown-item">Manage Instances</div>
+                <div id="_ctrlAdmin_Div3" class="dropdown-divider">Div3</div>
+                <div id="_ctrlAdmin_Processing Options" class="dropdown-header">Processing Options</div>
+                <div id="_ctrlAdmin_RoutingRenameOptions" class="dropdown-item">Routing &amp; Rename</div>
+                <div id="_ctrlAdmin_Div3" class="dropdown-divider">Div3</div>
+                <div id="_ctrlAdmin_User Administration" class="dropdown-header">User Administration</div>
+                <div id="_ctrlAdmin_Users" class="dropdown-item">Users</div>
+                <div id="_ctrlAdmin_UserGroups" class="dropdown-item">User Groups</div>
+                <div id="_ctrlAdmin_AccountInvites" class="dropdown-item">User Invitations</div>
+                <div id="_ctrlAdmin_AccountRegistrations" class="dropdown-item opsAccountRegistrations">Registration
+                  Approvals</div>
+                <div id="_ctrlAdmin_Permissions" class="dropdown-item">Permissions</div>
+              </div>
+            </li>
+            <li id="_ctrlOps" class="nav-item dropleft">
+              <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class="fad fa-user-cog fa-swap-opacity icon-size" data-toggle="tooltip" data-placement="top"
+                  title="Thru OPS"></i>
+                <!--<span>Ops</span>-->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="userDropdown">
+                <div id="_ctrlOps_OperationsMgmt" class="dropdown-header">ThruOps Management</div>
+                <div id="_ctrlOps_Dashboard" class="dropdown-item">Operations Dashboard</div>
+                <div id="_ctrlOps_Settings" class="dropdown-item">Application Settings</div>
+                <div id="_ctrlOps_ManageCustomers" class="dropdown-item">Manage Customers</div>
+                <div id="_ctrlOps_ManageClients" class="dropdown-item">Manage Clients</div>
+                <div id="_ctrlOps_InvitationEmails" class="dropdown-item">Email Templates</div>
+                <div id="_ctrlOps_Div4" class="dropdown-divider">Div4</div>
+                <div id="_ctrlOps_ThruOperationsUserMgmt" class="dropdown-header">ThruOps User Administration</div>
+                <div id="_ctrlOps_ManageInvitations" class="dropdown-item">User Invitations</div>
+                <div id="_ctrlOps_RegistrationApprovals" class="dropdown-item">Registration Approvals</div>
+                <div id="_ctrlOps_Div5" class="dropdown-divider">Div5</div>
+                <div id="_ctrlOps_ASM" class="dropdown-header">Application Security Management</div>
+                <div id="_ctrlOps_UserManagement" class="dropdown-item">Users</div>
+                <div id="_ctrlOps_AccountGroups" class="dropdown-item">Groups</div>
+                <div id="_ctrlOps_AccountPermissions" class="dropdown-item">Permissions</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- end of Right Side Menu -->
+
+
+
+    </nav>
+    <div class="thru-header-bottom">
+      <div id="mmMainMenu" class="thru-container">
+        <nav class="navbar navbar-expand navbar-light bg-light static-top">
+        </nav>
+      </div>
+    </div>
+  </div> <!-- End Main Menu -->
+
+  <!--*******************************************************************************-->
+
+  <div class="wrapper mt-4">
+    <div class="act-filter-wrapper">
+      <div class="d-flex mb-4">
+        <h3 class="thruTitle" style="margin-left:-15px;">File Activity</h3>
+        <span class="ml-2 mr-2 pt-3 thruSubtitle-breadcrumb-separator"></span>
+        <span class="thruSubtitle pt-2">use filters to find Flows</span>
+      </div>
+
+
+      <div class="row justify-content-center mb-5 flowFilter">
+        <div class="filterOutline col pt-3">
+          <h3 class="text-center mt-1 mb-3">Flow Search Filter</h3>
+          <div class="border-top"></div>
+          <div class="row mt-3">
+            <div class="form-group col-md-4">
+              <label for="">Flow</label><br>
+              <input type="text" class="form-control" placeholder="Find a Flow... " id="input_flow"
+                style="width: calc(100% - 40px); display: inline-block; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+              <button class="btn btn-success" type="button"
+                style="margin-left: -4px; margin-bottom: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0;"><i
+                  id="" class="fas fa-search" style="display: inline-block;"></i></button>
+
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">Organization</label><br>
+              <input type="text" class="form-control" placeholder="Find a Organization... " id="input_flow"
+                style="width: calc(100% - 40px); display: inline-block; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+              <button class="btn btn-success" type="button"
+                style="margin-left: -4px; margin-bottom: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0;"><i
+                  id="" class="fas fa-search" style="display: inline-block;"></i></button>
+
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">File</label><br>
+              <input type="text" class="form-control" placeholder="Find a File Name... " id="input_flow"
+                style="width: calc(100% - 40px); display: inline-block; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+              <button class="btn btn-success" type="button"
+                style="margin-left: -4px; margin-bottom: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0;"><i
+                  id="" class="fas fa-search" style="display: inline-block;"></i></button>
+
+            </div>
+          </div>
+          <div class="row" style="visibility: hidden; display: none;">
+            <div class="form-group col-md-4">
+              <label for="">Processing</label>
+              <select class="form-control subFilter_TempIgnore" id="input_processing" disabled="">
+                <option value="-1">Select item.....</option>
+                <option value="Push">Push</option>
+                <option value="Pull">Pulls</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">File Status</label>
+              <select class="form-control subFilter_TempIgnore" id="input_filestatus" disabled=""></select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">Filename</label>
+              <input type="text" class="form-control subFilter_TempIgnore" id="input_filename" disabled="">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="form-group col-md-4">
+              <label for="">From</label>
+              <input type="date" class="form-control subFilter" id="input_from" disabled="">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">To</label>
+              <input type="date" class="form-control subFilter" id="input_to" disabled="">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="">Endpoint</label><br>
+              <input type="text" class="form-control" placeholder="" disabled>
+
+            </div>
+          </div>
+          <div class="border-top"></div>
+          <div class="mt-3">
+            <button id="btn_apply" type="submit" class="btn btn-Save btn-thru-lg mr-3">Apply</button>
+            <button id="btn_clear" type="submit" class="btn btn-Cancel btn-thru-lg">Clear All Filters</button>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end of filter section -->
+    <div class="thruCardContainer-activity">
+
+      <div class="d-flex mb-5">
+
+        <table class="table table-hover border-bottom mb-5 activity-table">
+          <thead>
+            <tr class="actvy-tbl-mainhdr" role="row">
+              <td colspan="8" class="actvy-source" rowspan="1">Source</td>
+              <td colspan="7" class="actvy-target" rowspan="1">Target</td>
+            </tr>
+
+            <tr class="actvy-tbl-subhdr" role="row">
+              <td class="sourceBlue" rowspan="1" colspan="1" aria-label="Organization" style="width: 117px;">
+                Organization</td>
+              <td class="sourceBlue" rowspan="1" colspan="1" style="width: 89px;" aria-label="Endpoint(Type)">
+                <b>Endpoint</b><br>(Type)</td>
+              <td class="sourceBlue cell-text-left" rowspan="1" colspan="1" style="width: 59px;" aria-label="FileName">
+                File<br>Name</td>
+              <td class="" rowspan="1" colspan="1" style="width: 42px;" aria-label="Size">Size</td>
+              <td class="sourceBlue sorting" tabindex="0" aria-controls="flowTable" rowspan="1" colspan="1"
+                style="width: 75px;" aria-label="TransferStarted: activate to sort column ascending">Transfer<br>Started
+              </td>
+              <td class="sourceBlue" rowspan="1" colspan="1" style="width: 75px;" aria-label="TransferStatus">
+                Transfer<br>Status</td>
+              <td class="sourceBlue" rowspan="1" colspan="1" style="width: 90px;" aria-label="EndpointDeliveries">
+                Endpoint<br>Deliveries</td>
+              <td class="sourceBlue" tabindex="0" aria-controls="flowTable" rowspan="1" colspan="1" style="width: 60px;"
+                aria-label="StatusTime: activate to sort column ascending">Status<br>Time</td>
+              <td class="hdr-divideline targetGreen" rowspan="1" colspan="1" style="width: 118px;"
+                aria-label="Organization">Organization</td>
+              <td class="targetGreen" rowspan="1" colspan="1" style="width: 90px;" aria-label="Endpoint(Type)">
+                <b>Endpoint</b><br>(Type)</td>
+              <td class="targetGreen cell-text-left" rowspan="1" colspan="1" style="width: 59px;" aria-label="FileName">
+                File<br>Name</td>
+              <td class="targetGreen cell-text-left" rowspan="1" colspan="1" style="width: 59px;" aria-label="FileName">
+                File<br>Size</td>
+              <td class="targetGreen" tabindex="0" aria-controls="flowTable" rowspan="1" colspan="1"
+                style="width: 76px;" aria-label="TransferStarted: activate to sort column ascending">Transfer<br>Started
+              </td>
+              <td class="targetGreen" rowspan="1" colspan="1" style="width: 77px;" aria-label="TransferStatus">
+                Transfer<br>Status</td>
+              <td class="targetGreen" tabindex="0" aria-controls="flowTable" rowspan="1" colspan="1"
+                style="width: 62px;" aria-label="StatusTime: activate to sort column ascending">Status<br>Time</td>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr class="activity-row">
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="sourceBlue">Org A - Sources</td>
+              <td class="sourceBlue">LAN</td>
+              <td class="sourceBlue">test</td>
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="tbl-body-divideline sourceBlue">Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr class="activity-row">
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="sourceBlue">Org A - Sources</td>
+              <td class="sourceBlue">LAN</td>
+              <td class="sourceBlue">test</td>
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="tbl-body-divideline sourceBlue">Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+            <tr class="activity-row">
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="sourceBlue">Org A - Sources</td>
+              <td class="sourceBlue">LAN</td>
+              <td class="sourceBlue">test</td>
+              <td class="sourceBlue">Source</td>
+              <td class="sourceBlue">Yes</td>
+              <td class="tbl-body-divideline sourceBlue">Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>Org A - Sources</td>
+              <td>LAN</td>
+              <td>test</td>
+              <td>test</td>
+              <td>test</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+    <!--end activity table -->
+  </div>
+
+  <footer>
+    <div class="copyright pr-1"><small>Copyright © 2020 Thru, Inc. | v.20200612001</small></div>
+  </footer>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+
+</html>

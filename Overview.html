@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\thru.css">
+  <script src="js\jquery-3.5.1.slim.min.js"></script>
+  <script src="js\popper.min.js"></script>
+  <script src="js\fontawesome-5-13-1-all.min.js"></script>
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview</title>
+</head>
+<body>
+  
+ <!-- Start Main Menu -->   
+<div class="thru-header">
+  <nav class="navbar navbar-expand navbar-dark static-top">
+    <a class="navbar-brand mr-1" href="#">
+      <img class="img-fluid" src="images\white-thru-logo.svg" alt="Thru logo" width="100px">
+   </a>
+    
+    <div id="thruHeaderBar" class="border-left thru-header-bar thru-header__brand-title show">
+      <button  class="btn btn-ghost mr-2 thru-hdr-bar thru-hdr-active" type="button">Overview</button>
+      <button  class="btn btn-ghost mr-2 thru-hdr-bar" type="button"> Activity</button>
+      <button  class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Organizations</button>
+      <button  class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Flows</button>
+    </div>
+    <label class="mr-5 custNameHeader">Thru Engineering</label>
+<!--Right side menu-->
+<div class="thru-header-topbar thru-header__brand-title ml-auto">
+    <div class="thru-header-topbar__item">
+    </div>
+    <div class="thru-header-topbar__item">
+         
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <label class="mr-1">Kenny</label> 
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-user icon-size" data-toggle="tooltip" data-placement="top" title="User"></i>
+                    <!--<span> Account</span>-->    
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">User Profile</div>    
+                        <div class="dropdown-item">Profile Settings</div>    
+                        <div class="dropdown-divider">Div2</div>    
+                        <div class="dropdown-item">Sign Out</div>
+                    </div>
+            </li>
+            
+            <li class="nav-item dropleft thru-ctrl-active">
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-question-circle icon-size thru-menu-active" data-toggle="tooltip" data-placement="top" title="Help"></i>
+                    <!--<span>Help</span>-->
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">Get Help</div>    
+                        <div class="dropdown-item">Help Center</div>
+                    </div>
+            </li>
+            <li class="nav-item dropleft p-0 faStack-adj active">    
+              <a class="nav-link dropdown-toggle p-0 px-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <!-- <i class="fas fa-bell icon-size"></i> -->
+               <span class="fa-stacks" data-count="8">  
+                  <i class="fas fa-bell icon-size"></i>
+                </span>  
+              </a>
+                  <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                      <div class="dropdown-header">Manage Notifications</div>    
+                      <div class="dropdown-item">Alert Activity </div>
+                  </div>
+            </li>
+            
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-cog icon-size" data-toggle="tooltip" data-placement="top" title="Admin"></i>
+                    <!--<span>Admin</span>-->    
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">Administration</div>    
+                    <div class="dropdown-item">General Settings</div>    
+                    <div class="dropdown-item">Alert Settings</div>    
+                    <div class="dropdown-item">Default Retention</div>    
+                    <div class="dropdown-item">Access &amp; Security</div>    
+                    <div class="dropdown-item">Connector Settings</div>    
+                    <div class="dropdown-item">Email Settings</div>    
+                    <div class="dropdown-item">Manage Instances</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">Processing Options</div>    
+                    <div class="dropdown-item">Routing &amp; Rename</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">User Administration</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">User Groups</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item opsAccountRegistrations">Registration Approvals</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fad fa-user-cog fa-swap-opacity icon-size" data-toggle="tooltip" data-placement="top" title="Thru OPS"></i>
+                    <!--<span>Ops</span>-->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">ThruOps Management</div>    
+                    <div class="dropdown-item">Operations Dashboard</div>    
+                    <div class="dropdown-item">Application Settings</div>    
+                    <div class="dropdown-item">Manage Customers</div>    
+                    <div class="dropdown-item">Manage Clients</div>    
+                    <div class="dropdown-item">Email Templates</div>    
+                    <div class="dropdown-divider">Div4</div>    
+                    <div class="dropdown-header">ThruOps User Administration</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item">Registration Approvals</div>    
+                    <div class="dropdown-divider">Div5</div>   
+                    <div class="dropdown-header">Application Security Management</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">Groups</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </div>  <!-- end of Right Side Menu -->
+  </nav>
+</div>  <!-- End Main Menu -->  
+
+<!--*******************************************************************************-->
+
+<div class="wrapper mt-4">
+    <div class="d-flex mb-4 row ml-3 pl-3">
+        <h3 class="thruTitle">Customer Overview</h3>
+        <span class="ml-2 mr-2 pt-3 thruSubtitle-breadcrumb-separator"></span>
+        <span class="thruSubtitle mt-2">recent activity</span>
+    </div>
+    
+    <div class="row"> 
+    <!-- Start Overview Alerts Table -->
+        <div class="thru-overviewContainer col pl-0 pr-0 border ml-5 mr-3 customerAlertTable">
+          <div class="overview-alerts-card pl-0 pr-0 pt-2">
+            <div class="d-flex mt-2 scrborder-bottom">
+              <div class="mr-auto form-group row mb-0">
+                <label for="sourceSearch" class="col-form-label ml-5 overviewTitle-alerts pt-0 d-flex">
+                  <div class="mr-3" style="transform: translateY(3px);"><i class="fad fa-bell-exclamation fa-swap-opacity" style="font-size:2rem !important;"></i></div> 
+                  <div class="d-flex">ALERTS <p class="ml-2"style="color:#e4abb0">(active)</p></div>
+                </label>
+              </div>
+            </div>
+            <div class="">
+              <div class="tab-pane fade show">
+                <table class="table table-hover mt-3 mb-5 customer-Alerts">
+                  <thead>
+                    <tr>
+                      <th scope="col">Description</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Alert ID</th>
+                   </tr>
+                  </thead>
+                  <tbody class="critStyle">
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Flow Endpoint</td>
+                      <td>01/01/2021 09:30AM</td>
+                      <td><a href="#"><u>004</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Transfer</td>
+                      <td>01/01/2021 09:30AM</td>
+                      <td><a href="#"><u>005</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Flow Endpoint</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>007</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Flow Endpoint</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>021</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Transfer</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>025</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Flow Endpoint</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>115</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Flow Endpoint</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>118</u></a></td>
+                    </tr>
+                    <tr>
+                      <td>Some Critical message here</td>
+                      <td>Transfer</td>
+                      <td>01/01/2021:09:30AM</td>
+                      <td><a href="#"><u>121</u></a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>  
+        </div>
+      </div> <!-- end Overview Alerts Table -->
+
+      
+      <!-- Start My Recent Activity Table -->
+      <div class="thru-overviewContainer col pl-0 pr-0 mr-5 ml-3 myActTable">
+        <div class="overview-myRecentAct-card pl-0 pr-0 pt-2">
+          <div class="d-flex mt-2 scrborder-bottom" >
+            <div class="mr-auto form-group row ">
+              <label for="sourceSearch" class="col-form-label ml-5 overviewTitle pt-0">MY MOST RECENT ACTIVITY</label>  
+            </div>
+        </div>
+          <table class="table table-hover mt-5 mb-5 myActivity">
+            <tbody>
+              <tr>
+                <td><b>Flow</b></td>
+                <td scope="row"><a href="#">Org_Flow_011521_1_1233456</u></a></td>
+              </tr>
+              <tr>
+                <td><b>Flow</b></td>
+                <td scope="row"><a href="#"><u>This_is_my_flow_011521_4_434343_abcdyec4c21</u></a></td>
+                </tr>
+              </tr>
+              <tr>
+                <td><b>Organization</b></td>
+                <td scope="row"><a href="#"><u>Organization_11521_8_yerDs</u></a></td>
+              </tr>
+              <tr>
+                <td><b>Organization</b></td>
+                <td scope="row"><a href="#"><u>Org_Endpoint_011</u></a></td>
+              </tr>
+              <tr>
+                <td><b>User Profile</b></td>
+                <td scope="row"><a href="#"><u>Change Password</u></a></td>
+                </tr>
+              </tr>
+              <tr>
+                <td><b>Flow</b></td>
+                <td scope="row"><a href="#">Org_Flow_011521_1_1233456</u></a></td>
+              </tr>
+              <tr>
+                <td><b>Flow</b></td>
+                <td scope="row"><a href="#"><u>This_is_my_flow_011521_4_434343_abcdyec4c21</u></a></td>
+              </tr>
+              <tr>
+                <td><b>User Profile</b></td>
+                <td scope="row"><a href="#"><u>Manage Permissions</u></a></td>
+                </tr>
+              </tr>
+              <tr>
+                <td><b>Organization</b></td>
+                <td scope="row"><a href="#"><u>Organization_11521_8_yerDs</u></a></td>
+              </tr>
+              <tr>
+                <td><b>Flow</b></td>
+                <td scope="row"><a href="#">Org_Flow_011521_1_1233456</u></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div> <!-- end My Recent Activity Table -->
+  </div>
+  <div class="row"> 
+
+    <!-- Start Most Recent work on Org Endpoints Table -->
+      <div class="thru-overviewContainer col pl-0 pr-0 border ml-5 mr-3 actFlowsTable">
+        <div class="overview-card pl-0 pr-0 pt-2">
+          <div class="d-flex mt-2 scrborder-bottom">
+            <div class="mr-auto form-group row ">
+              <label for="sourceSearch" class="col-form-label ml-5 overviewTitle pt-0">MOST RECENT WORK ON ORGANIZATION ENDPOINTS</label>  
+            </div>
+          </div>
+          <div class="">
+            <div class="tab-pane fade show">
+              <table class="table table-hover mt-3 overView-tables">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Updated Date</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Org Endpoint Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> 
+        </div>
+      </div> <!-- end Most Recent Activity with Flows Table -->
+
+      
+      <!-- Start Most Recent Activity with ORG Endpoints Table -->
+      <div class="thru-overviewContainer col pl-0 pr-0 mr-5 ml-3">
+        <div class="overview-card pl-0 pr-0 pt-2">
+          <div class="d-flex mt-2 scrborder-bottom" >
+            <div class="mr-auto form-group row ">
+              <label for="sourceSearch" class="col-form-label ml-5 overviewTitle pt-0">MOST RECENT WORK ON FLOWS</label>  
+            </div>
+          </div>
+          <div class="">
+            <div class="tab-pane fade show">
+              <table class="table table-hover mt-3 overView-tables" >
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Updated Date</th>
+                 </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">	This_is_my_flow_011521_4_434343_abcdyec4c21</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">Flow Name</u></a></td>
+                    <td>Org Endpoint</td>
+                    <td>01/01/2021 09:30AM</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+           
+        </div>
+    </div> <!-- end Activity with ORG Endpoints Table -->
+  </div>
+  <div class="row" style="width: calc(50% + 16px);"> 
+    <!-- Start Most Recent Activity with Flows Table -->
+        <div class="thru-overviewContainer col pl-0 pr-0 border ml-5 mr-3">
+          <div class="overview-card pl-0 pr-0 pt-2">
+            <div class="d-flex mt-2 scrborder-bottom">
+              <div class="mr-auto form-group row ">
+                <label for="sourceSearch" class="col-form-label ml-5 overviewTitle pt-0">MOST RECENT WORK ON ORGANIZATIONS</label>  
+              </div>
+          </div>
+          <table class="table table-hover mb-5 activityFlows">
+            <thead>
+              <tr>
+                <th scope="col" >Organizations</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><a href="#"><u>Organization_011521_1_xyz</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>this_is_my_org_011521_4_434343</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>org_011521_3_7jid</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>this_is_my_Organization_011521_4_434343</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Flow_011521_3_7jid</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Flow_011521_1_xyz</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>this_is_my_flow_011521_4_434343</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Flow_011521_3_7jid</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>this_is_my_flow_011521_4_434343</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Flow_011521_3_7jid</u></a></td>
+                <td></td>
+                <td></td>
+                <td>01/01/2021:09:30AM</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+      </div> <!-- end Most Recent Activity with Flows Table -->
+
+      
+      <!-- Start Future "hidden" tile Table -->
+      <div class="thru-overviewContainer col pl-0 pr-0 mr-5 ml-3" hidden>
+        <div class="overview-card pl-0 pr-0 pt-2">
+          <div class="d-flex mt-2 trgborder-bottom" >
+            <div class="mr-auto form-group row ">
+              <label for="sourceSearch" class="col-form-label ml-5 overviewTitle pt-0">Tile for Future</label>  
+            </div>
+        </div>
+          <table class="table table-hover mt-5 border-bottom mb-5">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Enabled</th>
+                <th scope="col">Organization</th>
+                <th scope="col">Type</th>
+                <th scope="col" style="width: 75px;">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row"><a href="#"><u>Target - Thru Node (LAN)(Root)</u></a></td>
+                <td>Yes</td>
+                <td>Org A - Targets</td>
+                <td>LAN</td>
+                <td style="text-align:center;font-size: 1.6rem;"><i class="fad fa-ellipsis-v"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Target - External FTP</u></a></td>
+                <td>No</td>
+                <td>Org A - Targets</td>
+                <td>External</td>
+                <td style="text-align:center;font-size: 1.6rem;"><i class="fad fa-ellipsis-v"></i></td>
+              </tr>
+              <tr>
+                <td scope="row"><a href="#"><u>Target - External SFTP</u></a></td>
+                <td>No</td>
+                <td>Org A - Targets</td>
+                <td>External</td>
+                <td style="text-align:center;font-size: 1.6rem;"><i class="fad fa-ellipsis-v"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div> <!-- end Activity with ORG Endpoints Table -->
+  </div>
+  
+
+  </div>
+
+  <footer>
+    <div class="copyright pr-1"><small>Copyright © 2020 Thru, Inc. |  v.20200612001</small></div>
+  </footer>
+  
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+  
+</body>
+</html>

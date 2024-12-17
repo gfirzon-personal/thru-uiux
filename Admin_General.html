@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\thru.css">
+  <script src="js\jquery-3.5.1.slim.min.js"></script>
+  <script src="js\popper.min.js"></script>
+  <script src="js\fontawesome-5-13-1-all.min.js"></script>
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Settings</title>
+</head>
+<body>
+  
+ <!-- Start Main Menu -->   
+<div class="thru-header">
+  <nav class="navbar navbar-expand navbar-dark static-top">
+    <a class="navbar-brand mr-1" href="#">
+      <img class="img-fluid" src="images\white-thru-logo.svg" alt="Thru logo" width="100px">
+   </a>
+    
+    <div id="thruHeaderBar" class="border-left thru-header-bar thru-header__brand-title show">
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Overview</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button"> Activity</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Organizations</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Flows</button>
+    </div>
+    <label class="mr-5 custNameHeader">Thru Engineering</label>
+<!--Right side menu-->
+<div id="thruTopBar" class="thru-header-topbar thru-header__brand-title ml-auto">
+    <div class="thru-header-topbar__item">
+         
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <label class="mr-1">Kenny</label> 
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-user icon-size" data-toggle="tooltip" data-placement="top" title="User Profile"></i>
+                    <!--<span> Account</span>-->    
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">User Profile</div>    
+                        <div class="dropdown-item">Profile Settings</div>    
+                        <div class="dropdown-divider"></div>    
+                        <div class="dropdown-item">Sign Out</div>
+                    </div>
+            </li>
+            
+            <li id="_ctrlHelp" class="nav-item dropleft thru-ctrl-active">
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-question-circle icon-size thru-menu-active" data-toggle="tooltip" data-placement="top" title="Help"></i>
+                    <!--<span>Help</span>-->
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">Get Help</div>    
+                        <div class="dropdown-item">Help Center</div>
+                    </div>
+            </li>
+            <li class="nav-item dropleft">    
+                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               
+                        <i class="fas fa-bell icon-size" data-toggle="tooltip" data-placement="top" title="Notifications"></i>
+                        <!--<span>Notifications</span>-->    
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                            <div class="dropdown-header">Manage Notifications</div>    
+                            <div class="dropdown-item-text no-messages">You don’t have any notifications yet.</div>
+                        </div>
+            </li>
+            
+            <li class="nav-item dropleft active">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-cog icon-size" data-toggle="tooltip" data-placement="top" title="Admin"></i>
+                    <!--<span>Admin</span>-->    
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">Administration</div>    
+                    <div class="dropdown-item">General Settings</div>    
+                    <div class="dropdown-item">Alert Settings</div>    
+                    <div class="dropdown-item">Default Retention</div>    
+                    <div class="dropdown-item">Access &amp; Security</div>    
+                    <div class="dropdown-item">Connector Settings</div>    
+                    <div class="dropdown-item">Email Settings</div>    
+                    <div class="dropdown-item">Manage Instances</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">Processing Options</div>    
+                    <div class="dropdown-item">Routing &amp; Rename</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">User Administration</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">User Groups</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item opsAccountRegistrations">Registration Approvals</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fad fa-user-cog fa-swap-opacity icon-size" data-toggle="tooltip" data-placement="top" title="Thru OPS"></i>
+                    <!--<span>Ops</span>-->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">ThruOps Management</div>    
+                    <div class="dropdown-item">Operations Dashboard</div>    
+                    <div class="dropdown-item">Application Settings</div>    
+                    <div class="dropdown-item">Manage Customers</div>    
+                    <div class="dropdown-item">Manage Clients</div>    
+                    <div class="dropdown-item">Email Templates</div>    
+                    <div class="dropdown-divider">Div4</div>    
+                    <div class="dropdown-header">ThruOps User Administration</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item">Registration Approvals</div>    
+                    <div class="dropdown-divider">Div5</div>   
+                    <div class="dropdown-header">Application Security Management</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">Groups</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>  <!-- end of Right Side Menu -->
+</nav>
+
+<!-- secondary navigation -->
+  
+  <div class="thru-header-bottom">
+    <div class="thru-container">
+      <nav class="navbar navbar-expand navbar-light bg-light static-top justify-content-end">
+        <div class="collapse navbar-collapse secdMenu ml-5">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">General<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Alerts</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Retention</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Access</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Connectors</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Email Settings</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Manage Instances</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div> <!-- End of secondary navigation -->
+
+</div>  <!-- End Main Menu -->  
+
+<!--*******************************************************************************-->
+
+<div class="container mt-4">
+    <div class="d-flex mb-4" style="margin-left: 20px;">
+        <h3 class="thruTitle">Settings</h3>
+        <span class="ml-2 mr-2 pt-3 thruSubtitle-breadcrumb-separator"></span>
+        <span class="thruSubtitle pt-2">manage account settings</span>
+    </div>
+  
+  
+    <div class="thruCardContainer">
+      <div class="Thru-Edit-Continer">        
+        <div class="col">
+          <div class="border-bottom">
+            <h4 class="mb-3">Registration</h4>
+            <div class="row ml-5">
+              <div class="col mb-3">
+                <label class="">Allow Automatic User Registration Approvals</label>
+                <div class="custom-control custom-switch">    
+                  <input id="adminRegistration" type="checkbox" class="custom-control-input" value="true" data-toggle="tooltip">    
+                  <label class="custom-control-label" for="adminRegistration"> 
+                  </label>
+                </div>
+                <small>New user registrations must be manually approved if this option is disabled</small>
+              </div>
+            </div>
+          </div>
+          <div class="border-bottom mt-3">
+            <h4 class="mb-3">File Transfer Resume Process</h4>
+            <div class="row ml-5 pl-3">
+              <div class="form-group mb-4">    
+                <label>Partial File Hold Time</label>        
+                <select id="PartialFileHoldTimeHours" name="PartialFileHoldHours" class="form-control " data-toggle="tooltip">
+                  <option value="8" selected="">8 Hours</option>
+                  <option value="12">12 Hours</option>
+                  <option value="16">16 Hours</option>
+                  <option value="20">20 Hours</option>
+                  <option value="24">24 Hours</option>
+                  <option value="36">36 Hours</option>
+                  <option value="48">48 Hours</option>
+              </select>
+              </div>
+            </div>
+          </div>   
+          <div class="border-bottom mt-3">
+            <h4 class="mb-3">Transport Clients</h4>
+            <div class="row ml-3">
+              <div class="col-12 form-group mb-4">
+                <div class="col mb-4">
+                  <label>Custom Client Settings by Organization Type:</label>
+                  <button class="transportClients ml-4">Click Here</button>
+                </div>
+                <div class="form-group d-flex justify-content-between">
+                  <div class="col">
+                    <label>Branded Setup</label>        
+                    <input type="text" class="form-control" maxlength="128" placeholder="" data-toggle="tooltip">    
+                  </div>
+                  <div class="col">
+                  <label>Installer Link Expiration</label>        
+                    <select id="InstallerLinkExpirationHours" name="InstallerLinkExpirationHours" class="form-control " data-toggle="tooltip">
+                      <option value="0" selected="">Never expires</option>
+                      <option value="1">1 Hour</option>
+                      <option value="2">2 Hours</option>
+                      <option value="3">3 Hours</option>
+                      <option value="4">4 Hours</option>
+                      <option value="5">5 Hours</option>
+                      <option value="6">6 Hours</option>
+                      <option value="7">7 Hours</option>
+                      <option value="8">8 Hours</option>
+                      <option value="12">12 Hours</option>
+                      <option value="24">1 Day</option>
+                      <option value="48">2 Days</option>
+                      <option value="72">3 Days</option>
+                      <option value="96">4 Days</option>
+                      <option value="120">5 Days</option>
+                      <option value="144">6 Days</option>
+                      <option value="168">7 Days</option>
+                      <option value="192">8 Days</option>
+                      <option value="216">9 Days</option>
+                      <option value="240">10 Days</option>
+                      <option value="264">11 Days</option>
+                      <option value="288">12 Days</option>
+                      <option value="312">13 Days</option>
+                      <option value="336">14 Days</option>
+                      <option value="360">15 Days</option>
+                      <option value="384">16 Days</option>
+                      <option value="408">17 Days</option>
+                      <option value="432">18 Days</option>
+                      <option value="456">19 Days</option>
+                      <option value="480">20 Days</option>
+                      <option value="504">21 Days</option>
+                      <option value="528">22 Days</option>
+                      <option value="552">23 Days</option>
+                      <option value="576">24 Days</option>
+                      <option value="600">25 Days</option>
+                      <option value="624">26 Days</option>
+                      <option value="648">27 Days</option>
+                      <option value="672">28 Days</option>
+                      <option value="696">29 Days</option>
+                      <option value="720">30 Days</option>
+                      <option value="744">31 Days</option>
+                      <option value="768">32 Days</option>
+                      <option value="792">33 Days</option>
+                      <option value="816">34 Days</option>
+                      <option value="840">35 Days</option>
+                      <option value="864">36 Days</option>
+                      <option value="888">37 Days</option>
+                      <option value="912">38 Days</option>
+                      <option value="936">39 Days</option>
+                      <option value="960">40 Days</option>
+                      <option value="984">41 Days</option>
+                      <option value="1008">42 Days</option>
+                      <option value="1032">43 Days</option>
+                      <option value="1056">44 Days</option>
+                      <option value="1080">45 Days</option>
+                      <option value="1104">46 Days</option>
+                      <option value="1128">47 Days</option>
+                      <option value="1152">48 Days</option>
+                      <option value="1176">49 Days</option>
+                      <option value="1200">50 Days</option>
+                      <option value="1224">51 Days</option>
+                      <option value="1248">52 Days</option>
+                      <option value="1272">53 Days</option>
+                      <option value="1296">54 Days</option>
+                      <option value="1320">55 Days</option>
+                      <option value="1344">56 Days</option>
+                      <option value="1368">57 Days</option>
+                      <option value="1392">58 Days</option>
+                      <option value="1416">59 Days</option>
+                      <option value="1440">60 Days</option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-bottom mt-3">
+            <h4 class="mb-3">AS2 Settings</h4>
+            <div class="row ml-3">
+              <div class="col-12 form-group mb-4">
+                <div class="form-group mb-5 d-flex justify-content-between">
+                  <div class="col">
+                    <label>AS2 Intermediary Server</label>        
+                    <input type="text" class="form-control" maxlength="128" placeholder="" data-toggle="tooltip" disabled>    
+                  </div>
+                  <div class="col">
+                    <label>Private Key Password</label>        
+                    <input type="text" class="form-control" maxlength="128" placeholder="" data-toggle="tooltip">      
+                  </div>
+                </div>
+                <div class="col mb-2">    
+                  <label>Private Certificate (pfx)</label>    
+                  <textarea class="form-control " rows="4" placeholder="" data-toggle="tooltip"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="mt-3">
+            <h4 class="mb-3">Page Customization</h4>
+            <div class="row ml-5 pl-3">
+              <div class="form-group d-flex justify-content-between">
+                <div class="form-group mb-2">    
+                  <label class=" required ">Browser Tab Text</label>        
+                  <input type="text" class="form-control" maxlength="128" placeholder="" data-toggle="tooltip">   
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>    
+      </div>
+      
+        <div class="Thru-portlet-footer border-top">
+          <div class="row">
+              <div class="col d-flex ml-3">
+                  <div class="mr-3"><button class="btn btn-Save btn-thru-lg">Save</button></div>
+                  <div class="mr-3"><button class="btn btn-Cancel btn-thru-lg">Cancel</button></div>
+              </div>
+          </div>
+        </div>     
+    </div>
+  </div>
+  
+  
+<footer>
+  <div class="copyright pr-1"><small>Copyright © 2020 Thru, Inc. |  v.20200612001</small></div>
+</footer>
+  
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\thru.css">
+  <script src="js\jquery-3.5.1.slim.min.js"></script>
+  <script src="js\popper.min.js"></script>
+  <script src="js\fontawesome-5-13-1-all.min.js"></script>
+  <script src="js\bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users Permissions</title>
+</head>
+<body>
+  
+ <!-- Start Main Menu -->   
+<div class="thru-header">
+  <nav class="navbar navbar-expand navbar-dark static-top">
+    <a class="navbar-brand mr-1" href="#">
+      <img class="img-fluid" src="images\white-thru-logo.svg" alt="Thru logo" width="100px">
+   </a>
+    
+    <div id="thruHeaderBar" class="border-left thru-header-bar thru-header__brand-title show">
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Overview</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button"> Activity</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Organizations</button>
+      <button class="btn btn-ghost mr-2 thru-hdr-bar" type="button">Flows</button>
+    </div>
+    <label class="mr-5 custNameHeader">Thru Engineering</label>
+<!--Right side menu-->
+<div id="thruTopBar" class="thru-header-topbar thru-header__brand-title ml-auto">
+    <div class="thru-header-topbar__item">
+         
+        <ul class="navbar-nav ml-auto ml-md-0">
+            <label class="mr-1">Kenny</label> 
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-user icon-size" data-toggle="tooltip" data-placement="top" title="User Profile"></i>
+                    <!--<span> Account</span>-->    
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">User Profile</div>    
+                        <div class="dropdown-item">Profile Settings</div>    
+                        <div class="dropdown-divider"></div>    
+                        <div class="dropdown-item">Sign Out</div>
+                    </div>
+            </li>
+            
+            <li id="_ctrlHelp" class="nav-item dropleft thru-ctrl-active">
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-question-circle icon-size thru-menu-active" data-toggle="tooltip" data-placement="top" title="Help"></i>
+                    <!--<span>Help</span>-->
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                        <div class="dropdown-header">Get Help</div>    
+                        <div class="dropdown-item">Help Center</div>
+                    </div>
+            </li>
+            <li class="nav-item dropleft">    
+                    <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               
+                        <i class="fas fa-bell icon-size" data-toggle="tooltip" data-placement="top" title="Notifications"></i>
+                        <!--<span>Notifications</span>-->    
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                            <div class="dropdown-header">Manage Notifications</div>    
+                            <div class="dropdown-item-text no-messages">You don’t have any notifications yet.</div>
+                        </div>
+            </li>
+            
+            <li class="nav-item dropleft active">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fas fa-cog icon-size" data-toggle="tooltip" data-placement="top" title="Admin"></i>
+                    <!--<span>Admin</span>-->    
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">Administration</div>    
+                    <div class="dropdown-item">General Settings</div>    
+                    <div class="dropdown-item">Alert Settings</div>    
+                    <div class="dropdown-item">Default Retention</div>    
+                    <div class="dropdown-item">Access &amp; Security</div>    
+                    <div class="dropdown-item">Connector Settings</div>    
+                    <div class="dropdown-item">Email Settings</div>    
+                    <div class="dropdown-item">Manage Instances</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">Processing Options</div>    
+                    <div class="dropdown-item">Routing &amp; Rename</div>    
+                    <div class="dropdown-divider">Div3</div>    
+                    <div class="dropdown-header">User Administration</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">User Groups</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item opsAccountRegistrations">Registration Approvals</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+            <li class="nav-item dropleft">    
+                <a class="nav-link dropdown-toggle p-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">        
+                    <i class="fad fa-user-cog icon-size"  data-toggle="tooltip" data-placement="top" title="Thru OPS"></i>
+                    <!--<span>Ops</span>-->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="userDropdown">    
+                    <div class="dropdown-header">ThruOps Management</div>    
+                    <div class="dropdown-item">Operations Dashboard</div>    
+                    <div class="dropdown-item">Application Settings</div>    
+                    <div class="dropdown-item">Manage Customers</div>    
+                    <div class="dropdown-item">Manage Clients</div>    
+                    <div class="dropdown-item">Email Templates</div>    
+                    <div class="dropdown-divider">Div4</div>    
+                    <div class="dropdown-header">ThruOps User Administration</div>    
+                    <div class="dropdown-item">User Invitations</div>    
+                    <div class="dropdown-item">Registration Approvals</div>    
+                    <div class="dropdown-divider">Div5</div>   
+                    <div class="dropdown-header">Application Security Management</div>    
+                    <div class="dropdown-item">Users</div>    
+                    <div class="dropdown-item">Groups</div>    
+                    <div class="dropdown-item">Permissions</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>  <!-- end of Right Side Menu -->
+</nav>
+
+<!-- secondary navigation -->
+  
+<div class="thru-header-bottom">
+  <div class="thru-container">
+    <nav class="navbar navbar-expand navbar-light bg-light static-top justify-content-end">
+      <div class="collapse navbar-collapse secdMenu ml-5">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Users</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Manage User Groups</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Manage User Permissions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">View User Sessions</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div> <!-- End of secondary navigation -->
+
+</div>  <!-- End Main Menu -->  
+
+<!--*******************************************************************************-->
+
+<div class="mt-4">
+  <div class="d-flex ml-3 pl-3 mb-4">
+    <h3 class="thruTitle ml-2">User Permissions</h3>
+    <div class="ml-2 mr-2 d-flex align-items-center thruSubtitle-breadcrumb-separator"></div>
+    <div class="thruSubtitle d-flex align-items-center">manage user permission assignments</div>
+  </div>
+  
+    
+  <div class="row ml-3 mr-4">
+    <div class="col-3">
+      <div class="thruCardContainer p-5">
+        <div class="p-0 mb-4">
+          <label for="exampleFormControlSelect1"><h5>Select a user to manage permissions</h5></label>
+          <select class="form-control select-mangUsers" id="exampleFormControlSelect1">
+            <option>Select User</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        </div>
+        <div class="border-top"></div>
+        <div class="form-group mb-4 mt-2">    
+          <label>First Name </label>        
+          <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip" disabled>
+        </div> 
+        <div class="form-group mb-4">    
+          <label>Last Name </label>        
+          <input type="text" class="form-control" maxlength="128" data-toggle="tooltip" disabled>
+        </div>
+        <div class="form-group mb-4">    
+          <label>Username</label>        
+          <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip" disabled>
+        </div> 
+      </div>
+    </div>
+    <div class="col">
+      <div class="thruCardContainer">
+        <h4 class="ml-3 my-3">Assign User Permissions <i>(Drag and Drop)</i></h4>
+        <div class="p-5 border-top"> 
+          <div class="row">
+            <div class="col ml-3 px-0 manageUGP-Container-L">   
+              <div class="mb-4 px-0 manageUGP-L">
+                <h4 class="pb-3 pl-3 pt-3">Available User Permissions</h4>
+              </div>     
+              <div class="p-4">
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip">
+                </div> 
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128" data-toggle="tooltip">
+                </div>
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip">
+                </div>
+              </div>
+            </div> 
+           <div class="col ml-3 px-0 manageUGP-Container-R" style="min-height: 400px;  border: 1px solid rgba(40, 167, 69, 0.30)">   
+              <div class="mb-4 px-0 manageUGP-R" style="background-color: #f4fff5; color: #28a745; border-bottom: 1px solid rgba(40, 167, 69, 0.30)">
+                <h4 class="pb-3 pl-3 pt-3">Assigned User Permissions</h4>
+              </div>     
+              <div class="p-4">
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip">
+                </div> 
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128" data-toggle="tooltip">
+                </div>
+                <div class="form-group mb-2">    
+                  <input type="text" class="form-control" maxlength="128"  data-toggle="tooltip">
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="Thru-portlet-footer border-top">
+          <div class="row">
+              <div class="col d-flex">
+                  <div class="mr-3"><button class="btn btn-Save btn-thru-lg">Save</button></div>
+                  <div class="mr-3"><button class="btn btn-Cancel btn-thru-lg">Reset</button></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+<footer>
+  <div class="copyright pr-1"><small>Copyright © 2020 Thru, Inc. |  v.20200612001</small></div>
+</footer>
+  
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+  
+</body>
+</html>
